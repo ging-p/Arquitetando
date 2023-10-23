@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arquitetando - Contato</title>
+		<link rel="icon" type="image/x-icon" href="img/ico.png">
+		<meta charset="UTF-8">
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="Arquitetura">
+		<meta name="author" content="Giovanni e André">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container-fluid">
+					<a class="navbar-brand" href="index.html"> <img src="img/icon.png" width="10%"> <strong>Arquitetando</strong></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			<div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+			<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="sobrenos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sobre nós</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="sobrenos.html">Equipe</a></li>
+							<li><a class="dropdown-item" href="sobrenos.html">Fundadores</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="portfolio.html">Portfólio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="projetos.html">Projetos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="parcerias.html">Parcerias</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="contato.html">Contato</a>
+					</li>
+				</ul>
+			</div>
+			</div>
+			</div>
+		</nav>
+	<br><br><br>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div id="" class="col" align="center">
+				<!-- Open Carossel -->
+				<div id="carouselExampleAutoplaying" class="carousel slide  carousel-fade" data-bs-ride="carousel">
+				  <div class="carousel-inner">
+					<div class="carousel-item active" data-bs-interval="1500">
+					  <img src="img/home/1.jpg" id="slidecont" class="d-block w-100" alt="FUNDEC">
+					</div>
+					<div class="carousel-item" data-bs-interval="1900">
+					  <img src="img/port/fc/3.jpg" id="slidecont" class="d-block w-100" alt="FUNDEC">
+					</div>
+					<div class="carousel-item" data-bs-interval="1800">
+					  <img src="img/port/jb/2.jpg" id="slidecont" class="d-block w-100" alt="Jardim Botânico de Sorocaba">
+					</div>
+					<div class="carousel-item" data-bs-interval="1900">
+					  <img src="img/port/jb/3.png" id="slidecont" class="d-block w-100" alt="Jardim Botânico de Sorocaba">
+					</div>
+					<div class="carousel-item" data-bs-interval="1900">
+					  <img src="img/home/3.jpg" id="slidecont" class="d-block w-100" alt="Prefeitura de Sorocaba">
+					</div>
+					<div class="carousel-item" data-bs-interval="1900">
+					  <img src="img/port/pf/3.jpg" id="slidecont" class="d-block w-100" alt="Prefeitura de Sorocaba">
+					</div>
+				  </div>
+				</div>
+				
+				<!-- Close Carossel -->
+				</div>
+				<div class="row col-md-6">
+						<form id="form">
+									<strong>
+										<h1 align="center">Entre em contato</h1>
+										<p align="center">
+											Gostou do nosso trabalho?
+											Então envie-nos uma mensagem.
+										</p><br><br>
+									</strong>
+									<div class="row g-2">
+									  <div class="col-md">
+										<label for="nome" class="form-label">Nome</label>
+										<input type="text" class="form-control" id="nome" required>
+									  </div>
+									   <div class="col-md">
+										<label for="sobrenome" class="form-label">Sobrenome</label>
+										<input type="text" class="form-control" id="sobrenome" required>
+									  </div>
+									</div>
+									<div class="row g-2">
+									  <div class="col-md">
+										<label for="email" class="form-label">E-mail</label>
+										<input type="email" class="form-control" id="email" required>
+									  </div>
+									   <div class="col-md">
+										<label for="celular" class="form-label">Celular</label>
+										<input type="phonenumber" class="form-control" id="celular" placeholder=" +1 (15)999-9999"required>
+									  </div>
+									</div>		  
+									  <div class="col-md mt-3">
+										<div class="form-floating">
+										  <select class="form-select" id="floatingSelectGrid">
+											<option value="1">Construção Civíl ou Empresarial</option>
+											<option value="2">Projetos Sustentáveis</option>
+											<option value="3">Modelos 3D</option>
+										  </select>
+										  <label for="floatingSelectGrid">Que tipo de trabalho deseja?</label>
+										</div>
+									  </div>
+									<div class="form-floating mt-3">
+									  <textarea class="form-control" id="detalhes" style="height: 100px" required></textarea>
+									  <label for="detalhes">Mais Detalhes</label>
+									</div>
+									<br>
+									<button type="submit" class="btn btn-primary">Enviar</button>
+									
+						</form>
+					</div>
+			</div>
+		</div>
+	</section>
+	<br>
+		<h3><strong>Dúvidas frequentes</strong></h3>
+		<div class="accordion accordion-flush" id="accordionFlushExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+					Atuam apenas em Sorocaba?
+					</button>
+				</h2>
+				<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">No momento, atuamos não só em Sorocaba mas também em cidades vizinhas. Estamos trabalhando para 
+					expandir nossos negócios, e nossa meta é alcançarmos toda a região sudeste, para em seguida irmos as outras regiões do país.</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+					Vocês priorizam a sustentabilidade?
+					</button>
+				</h2>
+				<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">Sim. Nossa equipe realiza um planejamento extensivo, buscando se atualizar para trabalhar com 
+					os materiais mais sustentáveis do momento. Nas contruções em áreas verdes, eles medem com o máximo de cautela a construção 
+					para que não haja uma interferência negativa ao meio ambiente.</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+					Valores do seus serviços?
+					</button>
+				</h2>
+				<div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">Depende muito do projeto que é proposto. Construções mais simples em locais mais abertos tem 
+					preço médio de R$1400,00 à R$3600,00. Quanto mais complexo o projeto e em locais movimentados, o valor pode subir entre 
+					R$4200,00 até R$7800,00.</div>
+				</div>
+			</div>
+		</div>
+	<footer class="bg-dark d-flex">
+		<div class="container text-center justify-content-between">
+			<div class="row">
+				<div class="col-3 text-start">
+					<p>&copy2023 André & Giovanni</p>
+				</div>
+				<div class="col-6">
+					<p>Entre em contato conosco e faça o seu projeto. Você também pode nos acompanhar nas redes sociais.</p>
+				</div>
+				<div class="col-3  text-end">
+					<img src="img/socialmedia.png" width="50%"> 
+				</div>
+			</div>
+		</div>
+	</footer>
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+		<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
